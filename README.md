@@ -1,4 +1,4 @@
-# Self-Defense Strategy Toolkit
+# Self-Defense Strategy Toolkit # FULLY TRASH
 
 A comprehensive Python toolkit for documenting, analyzing, and generating legally-admissible evidence for cases involving targeted harassment, device tampering, or coordinated attack campaigns. All evidence is cryptographically timestamped and chain-verified for court use.
 
