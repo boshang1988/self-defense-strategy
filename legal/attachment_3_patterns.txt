@@ -1,0 +1,10 @@
+PATTERN ANALYSIS
+Generated: 2025-12-23T05:17:19.514855+00:00
+
+Total Incidents: 1
+Sophistication Level: LOW
+Escalation Detected: False
+Multi-Vector Attack: False
+
+Vector Frequency:
+  GASLIGHTING: 1

@@ -1,7 +1,0 @@
-ATTACHMENT 5 — CROSS-PLATFORM CONSISTENCY INDICATORS
-============================================================
-
-Generated: 2025-12-23T04:57:18.960488+00:00
-
-Insufficient collections for consistency analysis.
-Minimum 2 forensic collections required.
