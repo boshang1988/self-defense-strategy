@@ -12,66 +12,40 @@ This toolkit applies the same principle to individual defense: build an evidence
 
 ---
 
-## Core Architecture
-
-| Component | Function | Precision Mechanism |
-|-----------|----------|---------------------|
-| **Evidence Chain** | Immutable record | SHA-256 hash linking—cannot backdate or modify |
-| **Forensic Capture** | Device state proof | Binary hashes, cert chains, build IDs |
-| **Pattern Analysis** | Intelligence | Predict next vectors from documented incidents |
-| **Legal Escalation** | Forcing function | Courts compel discovery; FOIA compels disclosure |
-| **Counter-Strategy** | Unified response | Evidence → legal theory → action |
-
----
-
-## Quick Start
+## Single File. No Dependencies. Pure Precision.
 
 ```bash
-# Initialize (creates hash-chained evidence system)
-python3 defense_toolkit.py init
-
-# Document incident with precision
-python3 defense_toolkit.py incident GASLIGHTING "Reality denial about documented event X at timestamp Y"
-
-# Analyze patterns
-python3 defense_toolkit.py patterns
-
-# Generate legal documents
-python3 defense_toolkit.py legal
-
-# View escalation ladder
-python3 defense_toolkit.py escalate
+python3 precision.py init                     # Initialize
+python3 precision.py log "Observation"        # Log with SHA-256 chain
+python3 precision.py incident GASLIGHTING "Reality denial at 14:32"
+python3 precision.py patterns                 # Analyze attack patterns
+python3 precision.py escalate                 # Legal escalation position
+python3 precision.py legal                    # Generate court documents
+python3 precision.py verify                   # Verify chain integrity
+python3 precision.py status                   # Current state
 ```
 
 ---
 
-## Command Reference
+## Attack Vectors
 
-### Evidence Commands
-| Command | Purpose |
-|---------|---------|
-| `init` | Initialize toolkit, first forensic capture |
-| `capture` | Capture device state (builds, certs, hashes) |
-| `log <msg>` | Log observation with cryptographic timestamp |
-| `verify` | Verify evidence chain integrity |
-| `status` | Show current state |
-
-### Counter-Attack Commands
-| Command | Purpose |
-|---------|---------|
-| `incident <vector> <desc>` | Record attack with classification |
-| `patterns` | Analyze attack patterns, predict next vectors |
-| `counter` | Get counter-measure recommendations |
-| `strategy` | Generate full counter-strategy document |
-| `escalate` | View 6-level legal escalation ladder |
-| `resilience` | Psychological defense protocols |
-| `legal` | Generate court-ready attachments |
-
-### Attack Vectors
 ```
-SURVEILLANCE    HARASSMENT      REPUTATION      GASLIGHTING
-ISOLATION       ECONOMIC        LEGAL_ABUSE     TECHNOLOGICAL
-PSYCHOLOGICAL   INSTITUTIONAL   PROXY_HARASSMENT INFORMATION_WARFARE
+SURVEILLANCE    GASLIGHTING     HARASSMENT      ISOLATION
+REPUTATION      ECONOMIC        LEGAL_ABUSE     TECHNOLOGICAL
+PSYCHOLOGICAL   INSTITUTIONAL
+```
+
+---
+
+## Legal Escalation Ladder
+
+```
+L1: DOCUMENTATION      → Hash-chained logs, forensic captures
+L2: FORMAL COMPLAINT   → HR, regulatory bodies, platforms
+L3: LAW ENFORCEMENT    → Police reports, FBI if federal
+L4: PROTECTIVE ORDERS  → Restraining orders, TRO
+L5: CIVIL LITIGATION   → Damages, discovery, injunction
+L6: FEDERAL ACTION     → Civil rights, Congressional notification
 ```
 
 ---
@@ -80,106 +54,47 @@ PSYCHOLOGICAL   INSTITUTIONAL   PROXY_HARASSMENT INFORMATION_WARFARE
 
 | Adversary Advantage | Precision Counter |
 |---------------------|-------------------|
-| Controls narrative | Your timestamps are cryptographic |
-| Denies reality | Your hash chain proves sequence |
+| Controls narrative | Cryptographic timestamps |
+| Denies reality | Hash chain proves sequence |
 | Uses institutions | Courts designed as equalizers |
-| Attempts isolation | Documented pattern builds coalition |
-| Gaslights | Reality anchors: contemporaneous records |
-| Has resources | Time favors truth—lies require maintenance |
-
----
-
-## Legal Escalation Ladder
-
-```
-Level 1: DOCUMENTATION      → Hash-chained logs, forensic captures
-Level 2: FORMAL COMPLAINT   → HR, regulatory bodies, platforms
-Level 3: LAW ENFORCEMENT    → Police reports, FBI if federal
-Level 4: PROTECTIVE ORDERS  → Restraining orders, TRO
-Level 5: CIVIL LITIGATION   → Damages, discovery, injunction
-Level 6: FEDERAL ACTION     → Civil rights, Congressional notification
-```
-
-Each level forces adversary response. Discovery exposes. Courts equalize.
-
----
-
-## Legal Theories Supported
-
-- **Harassment** (pattern + intent + distress)
-- **Stalking** (course of conduct + fear)
-- **Defamation** (false statement + publication + damages)
-- **IIED** (extreme conduct + severe distress)
-- **Civil Conspiracy** (agreement + unlawful act)
-- **Civil Rights** (state action + deprivation)
-- **ECPA/CFAA** (electronic surveillance/computer fraud)
+| Gaslights | Reality anchors in evidence |
+| Has resources | Time favors truth |
 
 ---
 
 ## The Zelensky Principle (Feb 28, 2025)
 
-When Trump attempted public humiliation in the Oval Office:
-
-1. **Composure** — Denied emotional reaction adversary sought
-2. **Public witness** — Millions observed the aggression
-3. **Clear position** — Stated facts, not emotions
-4. **No capitulation** — Did not agree under pressure
+1. **Composure** — Deny reaction adversary seeks
+2. **Public witness** — Millions observe aggression
+3. **Clear position** — Facts, not emotions
+4. **No capitulation** — Never agree under pressure
 5. **Documentation** — Everything on record
-
-**Result:** Aggressor's behavior exposed. Coalition strengthened. Moral authority preserved.
 
 > Your composure is your weapon. Their aggression, witnessed, damages them.
 
 ---
 
-## Psychological Precision
-
-### Reality Anchors (Anti-Gaslighting)
-- Contemporaneous written records
-- Photographs with metadata
-- Third-party witness statements
-- Hash-chained evidence logs
-- Official records and communications
-
-### Cognitive Defenses
-- Trust documented observations over denials
-- Recognize DARVO (Deny, Attack, Reverse Victim/Offender)
-- Note narrative discrepancies over time
-- Document every reality denial instance
-
----
-
-## Output Structure
+## Output
 
 ```
-evidence_logs/          → Hash-chained evidence
-forensics_output/       → Device state captures
-legal_output/           → Court attachments 1-5
-counter_strategy/       → Incidents + strategy documents
-pattern_analysis.json   → Attack pattern report
+evidence/
+  chain.jsonl      # SHA-256 hash-linked evidence
+  incidents.json   # Attack incident log
+forensics/
+  capture_*.json   # Device state snapshots
+legal/
+  attachment_*.txt # Court-ready documents
 ```
 
 ---
 
 ## Moral Basis
 
-All methods are:
-- **Defensive** — Responding to attacks, not initiating
+- **Defensive** — Responding, not initiating
 - **Documented** — Evidence-based, not fabricated
-- **Legal** — Using courts and proper channels
-- **Proportional** — Escalation matches threat level
-- **Within human rights** — Right to document, speak truth, access courts, self-defense
-
----
-
-## Installation
-
-```bash
-git clone https://github.com/boshang1988/self-defense-strategy.git
-cd self-defense-strategy
-pip install -r requirements.txt  # numpy optional
-python3 defense_toolkit.py init
-```
+- **Legal** — Courts and proper channels
+- **Proportional** — Escalation matches threat
+- **Human rights** — Document, speak truth, access courts
 
 ---
 
