@@ -1,0 +1,33 @@
+ATTACHMENT 1 — DECLARATION OF [PLAINTIFF NAME]
+============================================================
+
+I, [PLAINTIFF NAME], declare under penalty of perjury
+that the following is true and correct:
+
+1. I am the Plaintiff in this matter and make this declaration
+   based on my personal knowledge.
+
+2. I have collected forensic evidence from my devices using
+   cryptographically-verified logging tools. The evidence chain
+   contains 2 entries with SHA-256 hash verification.
+
+3. I have performed 1 forensic collections
+   documenting system builds, trust settings, and binary hashes.
+
+4. My primary device is configured as follows:
+   - Platform: macOS
+   - OS Version: 26.2
+   - Build: 25C56
+
+5. The attached evidence documents [describe specific anomalies
+   observed, with reference to specific entries by hash].
+
+6. I declare under penalty of perjury under the laws of the
+   United States of America that the foregoing is true and correct.
+
+
+Executed on: [DATE]
+
+
+_______________________________
+[PLAINTIFF NAME]

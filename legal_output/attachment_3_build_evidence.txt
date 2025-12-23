@@ -1,0 +1,46 @@
+ATTACHMENT 3 — SYSTEM UPDATE / FIRMWARE / BUILD EVIDENCE
+============================================================
+
+Generated: 2025-12-23T04:57:18.959919+00:00
+
+COLLECTION 1: ea6ef93eb2fe4e4f
+Timestamp: 2025-12-23T04:57:14.950370+00:00
+----------------------------------------
+
+System Build Information:
+  Product Name: macOS
+  Product Version: 26.2
+  Build Version: 25C56
+  SIP Status: System Integrity Protection status: enabled.
+
+  SystemVersion.plist Details:
+    BuildID: 1064E4EC-C7AA-11F0-A881-A7C34CFC5208
+    ProductBuildVersion: 25C56
+    ProductCopyright: 1983-2025 Apple Inc.
+    ProductName: macOS
+    ProductUserVisibleVersion: 26.2
+    ProductVersion: 26.2
+    iOSSupportVersion: 26.2
+
+Software Update History:
+  Display Name                                       Version    Date                  
+  ------------                                       -------    ----                  
+  Command Line Tools for Xcode                       16.2       12/21/2025, 01:35:23  
+  Command Line Tools for Xcode                       16.4       12/21/2025, 01:35:23  
+  Command Line Tools for Xcode 26.2                  26.2       12/21/2025, 01:35:23  
+  macOS Tahoe 26.2                                   26.2       12/21/2025, 02:46:31
+
+Critical Binary Hashes:
+  /usr/libexec/security_authtrampoline
+    SHA-256: N/A
+    Size: N/A bytes
+  /usr/bin/sudo
+    SHA-256: N/A
+    Size: N/A bytes
+  /usr/bin/login
+    SHA-256: 90544e2e365e3b0f9f3fab043ce97bf7154e780504c0e8a0f0d1b6247d3f2ac9
+    Size: 139312 bytes
+  /sbin/launchd
+    SHA-256: c390b6345abd4f911726bc11f72de403fd27dc1b62b2268946cdf6426df25e7d
+    Size: 1181872 bytes
+

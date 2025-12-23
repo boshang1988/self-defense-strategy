@@ -1,0 +1,624 @@
+{
+  "created": "2025-12-23T04:57:28.013442+00:00",
+  "dns_servers": [
+    "2600",
+    "2600:4040:55d8:c400::1",
+    "192.168.1.1"
+  ],
+  "routing_table_hash": "3cf2b2e8e70fca2c7eb8dd1ae5f36ef0af4a4c810f27d899847e0cfa63ddec0f",
+  "listening_ports": [
+    {
+      "process": "Code\\x20H",
+      "pid": "267",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "rapportd",
+      "pid": "792",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "rapportd",
+      "pid": "792",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "rapportd",
+      "pid": "792",
+      "address": "*:3722",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:*",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:*",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:*",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:61536",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:57127",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:*",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "identitys",
+      "pid": "819",
+      "address": "*:*",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "sharingd",
+      "pid": "823",
+      "address": "*:*",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "sharingd",
+      "pid": "823",
+      "address": "*:58746",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "ControlCe",
+      "pid": "853",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "ControlCe",
+      "pid": "853",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "ControlCe",
+      "pid": "853",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "ControlCe",
+      "pid": "853",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "replicato",
+      "pid": "921",
+      "address": "*:54282",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "com.apple",
+      "pid": "2752",
+      "address": "*:56649",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "com.apple",
+      "pid": "2752",
+      "address": "*:49647",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:51392->[2607:f8b0:4006:803::200e]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:49237->[2607:f8b0:4004:c07::54]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:54475->[2607:f8b0:4006:81e::2003]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:50813->[2607:f8b0:4006:808::200e]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:54936->[2607:f8b0:4006:820::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:51651->[2607:f8b0:4006:81c::200e]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:50204->[2607:f8b0:4004:c07::54]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:55717->[2607:f8b0:4006:80b::200e]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:50365->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:63445->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:50371->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:57909->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:53003->[2607:f8b0:4006:80c::2004]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:61465->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:49569->[2607:f8b0:4006:808::200e]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:62730->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:63217->[2607:f8b0:4006:80c::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:52312->[2607:f8b0:4006:822::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:50744->[2607:f8b0:4006:804::2004]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "[2600:4040:55d8:c400:1c78:3723:edbe:1050]:59998->[2607:f8b0:4006:804::200a]:443",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Google",
+      "pid": "2776",
+      "address": "*:5353",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "GitHub",
+      "pid": "3273",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "6276",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "lghub_age",
+      "pid": "8814",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "tor",
+      "pid": "25860",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "tor",
+      "pid": "25860",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "OneDrive",
+      "pid": "44299",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "47526",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "57606",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "70362",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "83526",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "94060",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    },
+    {
+      "process": "Code\\x20H",
+      "pid": "94482",
+      "address": "(LISTEN)",
+      "timestamp": "2025-12-23T04:57:28.025372+00:00"
+    }
+  ],
+  "connection_count": 176
+}

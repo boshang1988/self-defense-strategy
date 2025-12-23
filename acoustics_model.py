@@ -10,11 +10,31 @@ This is a physics simulation for understanding acoustic propagation -
 useful for analyzing claims about directional audio technology.
 """
 
-import numpy as np
 import json
+import math
 from dataclasses import dataclass
 from typing import Tuple, Optional
 import sys
+
+# Try numpy, fall back to math module
+try:
+    import numpy as np
+    HAS_NUMPY = True
+except ImportError:
+    HAS_NUMPY = False
+    # Create minimal numpy-like interface using math
+    class NumpyFallback:
+        pi = math.pi
+        @staticmethod
+        def sqrt(x): return math.sqrt(x)
+        @staticmethod
+        def exp(x): return math.exp(x)
+        @staticmethod
+        def log10(x): return math.log10(x)
+        @staticmethod
+        def degrees(x): return math.degrees(x)
+        inf = float('inf')
+    np = NumpyFallback()
 
 
 # Physical constants

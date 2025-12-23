@@ -10,18 +10,27 @@ Components:
 2. Build Forensics - Code signing and build verification
 3. Acoustics Model - Physics analysis for directional audio claims
 4. Legal Generator - Court-ready attachment generation
+5. Moral Counter-Attack - Ethical defensive strategies
 
 Usage:
     python defense_toolkit.py [command]
 
 Commands:
-    init        - Initialize evidence directories and first collection
-    capture     - Capture full device state
-    log <msg>   - Log an observation
-    analyze     - Run full analysis suite
-    legal       - Generate all legal attachments
-    verify      - Verify all evidence integrity
-    status      - Show current status
+    init          - Initialize evidence directories and first collection
+    capture       - Capture full device state
+    log <msg>     - Log an observation
+    analyze       - Run full analysis suite
+    legal         - Generate all legal attachments
+    verify        - Verify all evidence integrity
+    status        - Show current status
+
+Counter-Attack Commands:
+    incident <vector> <desc>  - Record an attack incident
+    patterns                  - Analyze attack patterns
+    counter                   - Get counter-measure recommendations
+    strategy                  - Generate full counter-strategy
+    escalate                  - View legal escalation options
+    resilience                - Show psychological resilience plan
 """
 
 import json
@@ -35,6 +44,11 @@ from evidence_logger import EvidenceLogger, capture_full_state
 from build_forensics import SigningArtifactCollector, BuildComparator
 from legal_evidence_generator import LegalDocumentGenerator
 from acoustics_model import FeasibilityAnalyzer
+from moral_counterattack import (
+    CounterStrategyOrchestrator,
+    AttackVector,
+    AttackPatternAnalyzer
+)
 
 
 class DefenseToolkit:
