@@ -1,0 +1,27 @@
+DECLARATION UNDER PENALTY OF PERJURY
+
+I declare under penalty of perjury under the laws of the United States:
+
+1. I have maintained a cryptographically-verified evidence chain containing
+   5 entries, verified as INTACT.
+
+2. I have documented:
+   - 1 attack(s) against me
+   - 1 witness observation(s)
+   - 1 stated position(s)
+   - 1 evidence item(s)
+
+3. All entries are SHA-256 hash-chained with UTC timestamps.
+   The chain cannot be backdated or modified without detection.
+
+4. I have applied the Zelensky Protocol:
+   - Maintained composure under attack
+   - Ensured public witness of aggression
+   - Stated my position clearly with facts
+   - Refused to capitulate under pressure
+   - Documented everything immutably
+
+Executed: 2025-12-23T05:20:55.679611+00:00
+
+_______________________________
+[SIGNATURE]

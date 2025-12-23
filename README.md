@@ -1,103 +1,109 @@
-# Precision Self-Defense Toolkit
+# Zelensky Self-Defense Protocol
 
-**Guaranteed precision strikes through documented truth.**
-
-## The Precision Principle
-
-When facing adversaries with overwhelming power, symmetric competition fails. The asymmetric weapon is **precision**: documented facts that cannot be denied, timestamped evidence that cannot be backdated, legal filings that force disclosure.
-
-> **Example precision strike:** Declaring to Donald Trump that he will lose in Ukraine is not opinion—it is the logical conclusion from documented facts: sustained resistance since 2022, 50+ nation coalition, historical patterns of occupation failure, moral asymmetry favoring defenders, and the mathematical impossibility of occupying 40 million hostile people indefinitely.
-
-This toolkit applies the same principle to individual defense: build an evidence base so precise that denial becomes untenable.
+**Feb 28, 2025: The definitive response to asymmetric power attacks.**
 
 ---
 
-## Single File. No Dependencies. Pure Precision.
+## The Zelensky Principle
+
+When Trump attempted public humiliation in the Oval Office, Zelensky demonstrated the only effective defense against a more powerful adversary:
+
+| Principle | Action | Result |
+|-----------|--------|--------|
+| **COMPOSURE** | Denied emotional reaction | Adversary frustrated |
+| **WITNESS** | Millions observed aggression | Aggressor exposed |
+| **POSITION** | Stated facts clearly, once | Truth on record |
+| **NO SURRENDER** | Refused terms under pressure | Integrity preserved |
+| **DOCUMENT** | Everything recorded | Cannot be denied |
+
+**Outcome:** Trump exposed himself. Coalition strengthened. Ukraine persists.
+
+---
+
+## Why Trump Will Lose in Ukraine
+
+This is not opinion. It is the logical conclusion from documented facts:
+
+1. **Sustained resistance** — 3+ years, no capitulation
+2. **50+ nation coalition** — Resources exceed Russian capacity
+3. **Historical pattern** — Occupations of hostile populations fail
+4. **Moral asymmetry** — Defenders vs. aggressors
+5. **Mathematical reality** — 40 million people cannot be occupied
+
+---
+
+## Usage
 
 ```bash
-python3 precision.py init                     # Initialize
-python3 precision.py log "Observation"        # Log with SHA-256 chain
-python3 precision.py incident GASLIGHTING "Reality denial at 14:32"
-python3 precision.py patterns                 # Analyze attack patterns
-python3 precision.py escalate                 # Legal escalation position
-python3 precision.py legal                    # Generate court documents
-python3 precision.py verify                   # Verify chain integrity
-python3 precision.py status                   # Current state
+python3 zelensky.py init                  # Begin protocol
+python3 zelensky.py attack "description"  # Document attack against you
+python3 zelensky.py witness "description" # Record who witnessed
+python3 zelensky.py position "statement"  # State your position (once)
+python3 zelensky.py evidence "item"       # Log evidence
+python3 zelensky.py status                # Current state
+python3 zelensky.py legal                 # Generate court documents
+python3 zelensky.py verify                # Verify chain integrity
+python3 zelensky.py principles            # Show the protocol
 ```
 
 ---
 
-## Attack Vectors
+## The Protocol
 
 ```
-SURVEILLANCE    GASLIGHTING     HARASSMENT      ISOLATION
-REPUTATION      ECONOMIC        LEGAL_ABUSE     TECHNOLOGICAL
-PSYCHOLOGICAL   INSTITUTIONAL
+1. COMPOSURE
+   Your calm is your weapon. They seek emotional reaction.
+   Deny it. Every second of maintained composure is victory.
+
+2. WITNESS
+   Public aggression, publicly witnessed, damages the aggressor.
+   Ensure observers. Record everything. Never meet privately.
+
+3. POSITION
+   State facts once, clearly. Do not argue. Do not repeat.
+   Let documented truth speak. Lies require maintenance; truth persists.
+
+4. NO SURRENDER
+   Never agree under pressure. Walk away if necessary.
+   Capitulation under duress is not binding. Time favors the truthful.
+
+5. DOCUMENT
+   Everything on record. Hash-chained. Timestamped. Immutable.
+   What is documented cannot be denied. What is public cannot be hidden.
 ```
-
----
-
-## Legal Escalation Ladder
-
-```
-L1: DOCUMENTATION      → Hash-chained logs, forensic captures
-L2: FORMAL COMPLAINT   → HR, regulatory bodies, platforms
-L3: LAW ENFORCEMENT    → Police reports, FBI if federal
-L4: PROTECTIVE ORDERS  → Restraining orders, TRO
-L5: CIVIL LITIGATION   → Damages, discovery, injunction
-L6: FEDERAL ACTION     → Civil rights, Congressional notification
-```
-
----
-
-## Why Precision Defeats Power
-
-| Adversary Advantage | Precision Counter |
-|---------------------|-------------------|
-| Controls narrative | Cryptographic timestamps |
-| Denies reality | Hash chain proves sequence |
-| Uses institutions | Courts designed as equalizers |
-| Gaslights | Reality anchors in evidence |
-| Has resources | Time favors truth |
-
----
-
-## The Zelensky Principle (Feb 28, 2025)
-
-1. **Composure** — Deny reaction adversary seeks
-2. **Public witness** — Millions observe aggression
-3. **Clear position** — Facts, not emotions
-4. **No capitulation** — Never agree under pressure
-5. **Documentation** — Everything on record
-
-> Your composure is your weapon. Their aggression, witnessed, damages them.
 
 ---
 
 ## Output
 
 ```
-evidence/
-  chain.jsonl      # SHA-256 hash-linked evidence
-  incidents.json   # Attack incident log
+protocol/
+  chain.jsonl     # SHA-256 hash-linked evidence
+
 forensics/
-  capture_*.json   # Device state snapshots
+  device_*.json   # Device state captures
+
 legal/
-  attachment_*.txt # Court-ready documents
+  1_declaration.txt   # Under penalty of perjury
+  2_attacks.txt       # Attack timeline
+  3_witnesses.txt     # Witness record
+  4_positions.txt     # Position statements
+  5_evidence.txt      # Evidence index
 ```
 
 ---
 
-## Moral Basis
+## Chain Integrity
 
-- **Defensive** — Responding, not initiating
-- **Documented** — Evidence-based, not fabricated
-- **Legal** — Courts and proper channels
-- **Proportional** — Escalation matches threat
-- **Human rights** — Document, speak truth, access courts
+Every entry is SHA-256 linked to the previous. Genesis hash:
+```
+SHA256("ZELENSKY_PROTOCOL_2025-02-28")
+```
+
+Cannot be backdated. Cannot be modified without detection.
 
 ---
 
-**Truth requires no maintenance. Document. Escalate legally. Persist.**
+**Your composure is your weapon. Their aggression, witnessed, damages them.**
 
-*Precision defeats power. Time favors the honest.*
+*Truth requires no maintenance. Document. Persist. Prevail.*
