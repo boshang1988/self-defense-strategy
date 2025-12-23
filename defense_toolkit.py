@@ -67,6 +67,9 @@ class DefenseToolkit:
             str(self.evidence_dir),
             str(self.forensics_dir)
         )
+        self.counter_strategy = CounterStrategyOrchestrator(
+            self.base_dir / "counter_strategy"
+        )
 
     def init(self):
         """Initialize the toolkit and perform first collection."""
@@ -285,6 +288,225 @@ class DefenseToolkit:
                     print(f"  Category: {entry.get('category')}")
                     print(f"  Description: {entry.get('description', '')[:50]}...")
 
+    # ============================================================
+    # MORAL COUNTER-ATTACK METHODS
+    # ============================================================
+
+    def record_incident(self, vector_str: str, description: str):
+        """Record an attack incident for pattern analysis."""
+        # Load existing incidents
+        self.counter_strategy.load_incidents()
+
+        try:
+            vector = AttackVector[vector_str.upper()]
+        except KeyError:
+            print(f"Unknown attack vector: {vector_str}")
+            print("\nValid vectors:")
+            for v in AttackVector:
+                print(f"  - {v.name}")
+            return
+
+        incident_id = self.counter_strategy.record_incident(
+            vector=vector,
+            description=description
+        )
+
+        # Also log to main evidence chain
+        self.logger.log_entry(
+            category="attack_incident",
+            description=f"[{vector.name}] {description}",
+            data={"incident_id": incident_id, "vector": vector.name}
+        )
+
+        print(f"Incident recorded: {incident_id}")
+        print(f"Vector: {vector.name}")
+        print(f"Description: {description}")
+        print(f"\nTotal incidents recorded: {len(self.counter_strategy.incidents)}")
+
+    def analyze_patterns(self):
+        """Analyze attack patterns from recorded incidents."""
+        print("Attack Pattern Analysis")
+        print("=" * 50)
+
+        self.counter_strategy.load_incidents()
+
+        if not self.counter_strategy.incidents:
+            print("\nNo incidents recorded yet.")
+            print("Use 'incident <vector> <description>' to record incidents.")
+            return
+
+        report = self.counter_strategy.pattern_analyzer.generate_pattern_report()
+
+        print(f"\nTotal incidents: {report['total_incidents']}")
+
+        # Temporal patterns
+        temporal = report.get("temporal_patterns", {})
+        if temporal.get("escalation_detected"):
+            print("\n⚠ ESCALATION DETECTED - Severity increasing over time")
+
+        # Vector analysis
+        vector_patterns = report.get("vector_patterns", {})
+        print("\nAttack Vectors Used:")
+        for vector, count in vector_patterns.get("vector_frequency", {}).items():
+            print(f"  - {vector}: {count} incident(s)")
+
+        if vector_patterns.get("multi_vector_attack"):
+            print("\n⚠ MULTI-VECTOR ATTACK - Coordinated campaign likely")
+
+        # Campaign sophistication
+        campaign = report.get("campaign_assessment", {})
+        print(f"\nCampaign Assessment: {campaign.get('level', 'Unknown')}")
+        for factor in campaign.get("contributing_factors", []):
+            print(f"  - {factor}")
+
+        # Predictions
+        predictions = report.get("predictions", [])
+        if predictions:
+            print("\nPredicted Next Attack Vectors:")
+            for pred in predictions:
+                print(f"  - {pred['vector']} (confidence: {pred['confidence']*100:.0f}%)")
+                print(f"    Preparation: {pred['recommended_preparation']}")
+
+        # Save report
+        report_path = self.base_dir / "pattern_analysis.json"
+        with open(report_path, 'w') as f:
+            json.dump(report, f, indent=2)
+        print(f"\nFull report saved to: {report_path}")
+
+    def recommend_countermeasures(self):
+        """Get counter-measure recommendations."""
+        print("Counter-Measure Recommendations")
+        print("=" * 50)
+
+        self.counter_strategy.load_incidents()
+
+        if not self.counter_strategy.incidents:
+            print("\nNo incidents recorded. Record incidents first.")
+            return
+
+        measures = self.counter_strategy.recommend_counter_measures()
+
+        print(f"\nBased on {len(self.counter_strategy.incidents)} recorded incidents:\n")
+
+        for idx, measure in enumerate(measures, 1):
+            print(f"{idx}. [{measure.measure_type.name}]")
+            print(f"   {measure.description}")
+            print(f"   Target: {measure.target_vector.name}")
+            if measure.legal_basis:
+                print(f"   Legal basis: {measure.legal_basis}")
+            if measure.resources_needed:
+                print(f"   Resources: {', '.join(measure.resources_needed)}")
+            print()
+
+    def generate_counter_strategy(self):
+        """Generate full counter-strategy document."""
+        print("Generating Full Counter-Strategy")
+        print("=" * 50)
+
+        self.counter_strategy.load_incidents()
+
+        if not self.counter_strategy.incidents:
+            print("\nNo incidents recorded. Record incidents first.")
+            return
+
+        strategy = self.counter_strategy.generate_full_counter_strategy()
+
+        print(f"\nStrategy generated for {len(self.counter_strategy.incidents)} incidents")
+
+        # Summary
+        assessment = strategy.get("situation_assessment", {})
+        campaign = assessment.get("campaign_sophistication", {})
+        print(f"\nCampaign Level: {campaign.get('level', 'Unknown')}")
+
+        # Immediate actions
+        print("\nImmediate Actions:")
+        for action in strategy.get("immediate_actions", []):
+            print(f"  • {action}")
+
+        # Legal position
+        legal = strategy.get("legal_position", {})
+        print(f"\nLegal Escalation Level: {legal.get('current_level', 1)} - {legal.get('level_name', 'Documentation')}")
+
+        # Exposure readiness
+        exposure = strategy.get("exposure_readiness", {})
+        ready_channels = [ch for ch, info in exposure.items() if info.get("ready")]
+        if ready_channels:
+            print(f"\nReady for exposure via: {', '.join(ready_channels)}")
+
+        print(f"\nFull strategy saved to: counter_strategy/")
+
+    def show_escalation_options(self):
+        """Show legal escalation ladder and recommendations."""
+        print("Legal Escalation Framework")
+        print("=" * 50)
+
+        self.counter_strategy.load_incidents()
+
+        # Show the ladder
+        print("\nEscalation Ladder:")
+        for level in self.counter_strategy.legal_escalation.ESCALATION_LADDER:
+            marker = "→" if level["level"] == self.counter_strategy.legal_escalation.current_level else " "
+            print(f"\n{marker} Level {level['level']}: {level['name']}")
+            print(f"   {level['description']}")
+            print("   Actions:")
+            for action in level["actions"]:
+                print(f"     - {action}")
+
+        # Show current position
+        if self.counter_strategy.incidents:
+            position = self.counter_strategy.legal_escalation.assess_current_position(
+                self.counter_strategy.incidents
+            )
+            print(f"\n{'=' * 50}")
+            print(f"Current Position: Level {position['current_level']} - {position['level_name']}")
+
+            # Applicable theories
+            if position.get("applicable_legal_theories"):
+                print("\nApplicable Legal Theories:")
+                for theory in position["applicable_legal_theories"]:
+                    print(f"  - {theory['theory'].upper()}")
+
+            # Recommendation
+            rec = self.counter_strategy.legal_escalation.recommend_escalation(
+                self.counter_strategy.incidents, "documented"
+            )
+            if rec["escalate"]:
+                print("\n⚠ ESCALATION RECOMMENDED:")
+                for reason in rec["reasoning"]:
+                    print(f"  - {reason}")
+
+    def show_resilience_plan(self):
+        """Show psychological resilience strategies."""
+        print("Psychological Resilience Plan")
+        print("=" * 50)
+
+        plan = self.counter_strategy.psych_defense.generate_resilience_plan()
+
+        # Strategies
+        print("\nResilience Strategies:")
+        for name, info in plan["strategies"].items():
+            print(f"\n• {name.replace('_', ' ').title()}")
+            print(f"  {info['description']}")
+            print(f"  Mechanism: {info['mechanism']}")
+
+        # Gaslighting defenses
+        print("\n" + "=" * 50)
+        print("Anti-Gaslighting Defenses")
+        print("\nReality Anchors:")
+        for anchor in plan["gaslighting_defenses"]["reality_anchors"]:
+            print(f"  • {anchor}")
+
+        print("\nCognitive Defenses:")
+        for defense in plan["gaslighting_defenses"]["cognitive_defenses"]:
+            print(f"  • {defense}")
+
+        # Implementation checklist
+        print("\n" + "=" * 50)
+        print("Implementation Checklist:")
+        for item in plan["implementation_checklist"]:
+            status = "[ ]" if item["status"] == "pending" else "[x]"
+            print(f"  {status} {item['task']}")
+
 
 def main():
     toolkit = DefenseToolkit()
@@ -313,6 +535,27 @@ def main():
         toolkit.verify()
     elif cmd == "status":
         toolkit.status()
+    # Counter-attack commands
+    elif cmd == "incident":
+        if len(sys.argv) < 4:
+            print("Usage: python defense_toolkit.py incident <vector> <description>")
+            print("\nAvailable vectors:")
+            for v in AttackVector:
+                print(f"  - {v.name}")
+            return
+        vector = sys.argv[2]
+        description = " ".join(sys.argv[3:])
+        toolkit.record_incident(vector, description)
+    elif cmd == "patterns":
+        toolkit.analyze_patterns()
+    elif cmd == "counter":
+        toolkit.recommend_countermeasures()
+    elif cmd == "strategy":
+        toolkit.generate_counter_strategy()
+    elif cmd == "escalate":
+        toolkit.show_escalation_options()
+    elif cmd == "resilience":
+        toolkit.show_resilience_plan()
     else:
         print(f"Unknown command: {cmd}")
         print(__doc__)
