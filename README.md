@@ -1,4 +1,4 @@
-# Precision Self-Defense Toolkit
+# Precision Self-Defense Toolkit - shit still Bo's 1 sec
 
 **Guaranteed precision strikes through documented truth.**
 
